@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: white;
+ 
+}
+
+h5, p {
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.texto {
+    color: rgb(33, 146, 38);
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: normal;
+    justify-content: center;
+}
+.fondo--verde {
+    background-image: linear-gradient(white, green);
+}
+/*menu del inicio*/
+.menuInicio {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+    margin-left: 25%;
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+ }
+
+ nav li {
+            flex: auto;
+            text-align: center;
+            }
+
+ ul a {
+        text-decoration: none;
+        color:rgb(28, 138, 55);
+        font-size: 1rem;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        
+ }
+ 
+ li>a:hover{
+    color: yellow;
+  }
+
+
+/*menu secciones*/
+
+.menu__seccion {
+    background-image: linear-gradient(white, green);
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30%;
+
+    nav ul {
+    line-height: 85px;
+    width: 60%;
+    float: none;
+    color:rgb(14, 100, 18);
+    
+        ul li {
+        display: flex;
+        list-style: none;
+        height: 46px;
+        margin-left: 20px;
+        }
+    }
+    
+    a {
+    text-decoration: none;
+    color:white;
+    }
+    a:hover {
+    color: rgb(162, 248, 3);
+    } 
+}
+
+/*logo y texto principal*/
+.cuerpo {
+    display: flex;
+    justify-content: center;
+
+}
+.cuerpo__titulo { 
+        display: flex;
+        letter-spacing: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        line-height: 50px;
+        color: rgb(33, 146, 38);
+        justify-content: center;
+
+}
+.cuerpo__titulo--subtitulo { 
+  @extend .cuerpo__titulo;
+}
+
+/*logo del sitio*/
+#logoConInicio{
+    width: 10%;
+    float: left;
+    margin-top: 1px; 
+    transition: all 2s;
+    display: flex;
+    
+
+     img {
+    display: block;
+    float: left;
+    height: 70px;
+        }
+    :hover {
+    transform: rotate(360deg);
+    }
+}
+
+/*BOTON DE VOLVER AL INICIO*/
+
+.volverInicio {
+    display: flex;
+    border:1px solid rgb(14, 100, 18);
+    justify-content: center;
+    
+     a{
+    color: rgb(14, 100, 18);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+     a:hover {
+    color: rgb(162, 248, 3);
+    }
+}
+
+/*PIE DE PAGINA*/
+.pieDePagina {
+    display:flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding-bottom: 50px;
+    padding-top: 200px;
+    color: rgb(14, 100, 18);
+    text-align: center;
+    line-height: normal;
+    justify-content: center;
+ 
+
+}
+
+/*ËNLACE DIRECTO A INSTAGRAM*/
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin-left: 38%;
+    margin-right: 38%;
+    padding-top: 50px;
+    color: rgb(14, 100, 18);
+    text-align: center;
+
+     a {
+    justify-content: center;
+    }
+}
+/*estilo de la lista de productos*/
+.producto {
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+    margin:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    list-style-position: outside;
+    color:rgb(14, 100, 18);
+  
+}
+
+.subproducto {
+    @extend .producto;
+    list-style-position: inside;
+    font-weight: 300;
+    
+}
+
+/*IMAGEN DE CONOCENOS*/
+
+.imagenConocenos {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/*CARRUSEL GALARIA*/
+
+
+
+#carouselExampleCaptions {
+    padding: 5px;
+    margin-left: 25%;
+    height: 500px;
+    width: 50%;
+}
+.carousel-item img{
+    height: 500px;
+    
+}
+
+#carouselExampleInterval{
+    padding: 5px;
+    margin-left: 15%;
+    height: 700px;
+    width: 70%;
+}
+
+/*tabla nutricional*/
+.table-warning {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:saddlebrown;
+}
+.table__fila {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:saddlebrown;
+}
+.table__fila--1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(14, 100, 18);
+}
+

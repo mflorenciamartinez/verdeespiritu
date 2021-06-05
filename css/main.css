@@ -166,7 +166,7 @@ li > a:hover {
   display: flex;
   justify-content: center; }
 
-/*CARRUSEL GALARIA*/
+/*CARRUSEL GALARIA Y INDEX*/
 #carouselExampleCaptions {
   padding: 5px;
   margin-left: 25%;
@@ -194,3 +194,129 @@ li > a:hover {
 .table__fila--1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #0e6412; }
+
+
+  @media only screen and (min-width: 400px) and (max-width: 960px) {
+   
+    body {
+      background-color: rgb(214, 252, 138);
+    }
+
+      .menuInicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin-left: 24%;
+        width: 50%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(214, 252, 138);
+        
+     }
+    
+     nav li {
+                flex: auto;
+                text-align: center;
+                }
+    
+     ul a {
+            text-decoration: none;
+            color:rgb(28, 138, 55);
+            font-size: 16px;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+            
+     }
+     
+    
+    .menuInicio li>a:hover{
+        color: yellow;
+      }
+    
+    .cuerpo__titulo { 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        margin: center;
+        padding-left: 10%;
+        line-height: 50px;
+        color:rgb(14, 100, 18);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .cuerpo__titulo--subtitulo { 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      padding-left: 21%;
+      line-height: 50px;
+      color:rgb(14, 100, 18);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+    .pieDePagina {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        color: rgb(14, 100, 18);
+        text-align: center;
+    }
+    .carousel-item img {
+      height: 250px; 
+    }
+    #carouselExampleInterval {
+      padding: 5px;
+      margin-left: 15%;
+      height: 250px;
+      width: 70%; 
+      
+    }
+    #carouselExampleCaptions {
+      padding: 5px;
+      margin-left: 25%;
+      height: 250px;
+      width: 50%; }
+    .menu__seccion {
+        background-image: linear-gradient(white, rgb(214, 252, 138));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin-left: 24%;
+        width: 50%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+      .menu__seccion nav ul {
+        flex: auto;
+        text-align: center;
+      }
+        .menu__seccion nav ul ul li {
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 50px;
+          text-align: center;
+          display: inline-block; }
+      .menu__seccion a {
+        text-decoration: none;
+        color:rgb(28, 138, 55); }
+      .menu__seccion a:hover {
+        color: #a2f803; }
+  #logoConInicio {
+  width: 10%;
+  float: center;
+  margin-top: 1px;
+  display: flex; }
+  #logoConInicio img {
+    display: block;
+    float: center;
+    height: 70px; }
+    .fondo--verde {
+      background-image: linear-gradient(white, rgb(214, 252, 138)); }
+   }
+ 
