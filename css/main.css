@@ -30,10 +30,8 @@ h5, p {
   text-align: center;
   justify-content: center;
 }
-
 .fondo--verde {
   background-image: linear-gradient(white, green); }
-
 /*menu del inicio*/
 .menuInicio {
   display: inline-flex;
@@ -46,12 +44,11 @@ h5, p {
   margin-left: 25%;
   width: 50%;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-nav li {
+  nav li {
   flex: auto;
   text-align: center; }
 
-ul a {
+  ul a {
   text-decoration: none;
   color: #1c8a37;
   font-size: 1rem;
@@ -59,7 +56,7 @@ ul a {
   text-align: center;
   display: inline-block; }
 
-li > a:hover {
+  li > a:hover {
   color: yellow; }
 
 /*articulos inicio*/
