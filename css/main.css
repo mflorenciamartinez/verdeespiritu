@@ -18,7 +18,18 @@ h5, p {
   margin-right: 5%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: normal;
+  text-align: justify;
   justify-content: center; }
+.texto--centrado {
+  color: #219226;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: normal;
+  text-align: center;
+  justify-content: center;
+}
 
 .fondo--verde {
   background-image: linear-gradient(white, green); }
@@ -50,6 +61,26 @@ ul a {
 
 li > a:hover {
   color: yellow; }
+
+/*articulos inicio*/
+.cajaArticulo, .cajaArticulo1 {
+  background-color: rgb(207, 248, 191);}
+.cajaArticulo2{
+  margin-top: 30px;
+  margin-bottom: 30px;}
+.articuloTitulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #103b12;
+  margin:60px;
+}
+.texto__inicio {
+  color: #219226;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;}
+
 
 /*menu secciones*/
 .menu__seccion {
@@ -85,28 +116,25 @@ li > a:hover {
   display: flex;
   justify-content: center; }
 
-.cuerpo__titulo, .cuerpo__titulo--subtitulo {
+.cuerpo__titulo {
   display: flex;
   letter-spacing: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
   line-height: 50px;
   color: #219226;
-  justify-content: center; }
+  justify-content: center;}
 
-/*logo del sitio*/
+
+/*logo del sitio en secciones*/
 #logoConInicio {
   width: 10%;
   float: left;
-  margin-top: 1px;
-  transition: all 2s;
-  display: flex; }
+  margin-top: 1px; }
   #logoConInicio img {
     display: block;
     float: left;
     height: 70px; }
-  #logoConInicio:hover {
-    transform: rotate(360deg); }
 
 /*BOTON DE VOLVER AL INICIO*/
 .volverInicio {
@@ -145,17 +173,19 @@ li > a:hover {
   text-align: center; }
   .instagram a {
     justify-content: center; }
+  .instagramTexto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(162, 185, 27);
+  }
 
 /*estilo de la lista de productos*/
 .producto, .subproducto {
-  width: 300px;
-  padding: 16px;
   border-radius: 10px;
-  margin: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
   list-style-position: outside;
-  color: #0e6412; }
+  color: #0e6412;
+  margin-top: 10px; }
 
 .subproducto {
   list-style-position: inside;
@@ -167,20 +197,10 @@ li > a:hover {
   justify-content: center; }
 
 /*CARRUSEL GALARIA Y INDEX*/
-#carouselExampleCaptions {
-  padding: 5px;
-  margin-left: 25%;
-  height: 500px;
-  width: 50%; }
-
-.carousel-item img {
-  height: 500px; }
-
-#carouselExampleInterval {
-  padding: 5px;
-  margin-left: 15%;
-  height: 700px;
-  width: 70%; }
+.galeria { 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 /*tabla nutricional*/
 .table-warning {
@@ -195,12 +215,35 @@ li > a:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #0e6412; }
 
+/*formulario de contacto*/
+  .form-label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0e6412;
+
+  }
+  .botonEnviar {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; }
+  .botonEnviar__detalle {
+    background-color: rgb(14, 100, 18);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15%;
+    height: 40px;
+    width: 100px;
+    color: rgb(207, 248, 191);
+  }
+  
+  /*UBICACION MAPA*/
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
   @media only screen and (min-width: 400px) and (max-width: 960px) {
-   
-    body {
-      background-color: rgb(214, 252, 138);
-    }
+
 
       .menuInicio {
         display: flex;
@@ -211,9 +254,7 @@ li > a:hover {
         padding: 5px;
         margin-left: 24%;
         width: 50%;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: rgb(214, 252, 138);
-        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;        
      }
     
      nav li {
@@ -238,22 +279,27 @@ li > a:hover {
     
     .cuerpo__titulo { 
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         margin: center;
         padding-left: 10%;
         line-height: 50px;
         color:rgb(14, 100, 18);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    .cuerpo__titulo--subtitulo { 
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 16px;
-      padding-left: 21%;
-      line-height: 50px;
-      color:rgb(14, 100, 18);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
+    .cajaArticulo {
+      background-color: rgb(207, 248, 191);}
+    .cajaArticulo1{
+        background-color: white;
+      }
+    .cajaArticulo2{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: rgb(207, 248, 191);
+    }
+    .articulo__titulo--2, .texto__inicio--2 {
+      background-color: white;
+    }
+  
     .pieDePagina {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 10px;
@@ -279,8 +325,8 @@ li > a:hover {
       margin-left: 25%;
       height: 250px;
       width: 50%; }
-    .menu__seccion {
-        background-image: linear-gradient(white, rgb(214, 252, 138));
+      .menu__seccion {
+        background-image: linear-gradient(white, rgb(207, 248, 191));
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -307,6 +353,8 @@ li > a:hover {
         color:rgb(28, 138, 55); }
       .menu__seccion a:hover {
         color: #a2f803; }
+    
+
   #logoConInicio {
   width: 10%;
   float: center;
@@ -317,6 +365,19 @@ li > a:hover {
     float: center;
     height: 70px; }
     .fondo--verde {
-      background-image: linear-gradient(white, rgb(214, 252, 138)); }
+      background-image: linear-gradient(white, rgb(207, 248, 191)); }
    }
- 
+
+   .productosImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+   }
+   .producto, .subproducto {
+
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   }
